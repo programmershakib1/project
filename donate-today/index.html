@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 B10</title>
+    <!-- tailwind and daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind CSS configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(180, 244, 97)',
+                        secondary: 'rgb(17, 17, 17)',
+                        third: 'rgba(17, 17, 17, 0.7)',
+                        btn_bg: 'rgba(17, 17, 17, 0.1)',
+                        nav_bg: 'rgb(249, 247, 243)',
+                        input: 'rgba(17, 17, 17, 0.4)',
+                    },
+                    fontFamily: {
+                        Lexend: 'Lexend',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-Lexend">
+    <header class="sticky top-0 backdrop-blur">
+      <!-- banner section -->
+      <section>
+        <!-- navbar part -->
+        <nav class="bg-nav_bg bg-opacity-70">
+            <div class="container w-11/12 mx-auto flex justify-between items-center py-6 lg:pb-14">
+                <div>
+                    <button id="blog-btn" class="w-28 h-12 text-secondary bg-primary text-xl font-semibold rounded-lg">Blog</button>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="images/logo.png" alt="">
+                    <h2 class="hidden lg:block text-secondary text-xl font-semibold">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="images/coin.png" alt="">
+                    <h2 class="text-third text-xl font-medium"><span id="balance">5500</span> BDT</h2>
+                </div>
+            </div>
+        </nav>
+        <!-- button part -->
+        <div class="flex justify-center gap-5 pt-10 lg:pt-20 pb-10">
+            <button id="donation-btn" class="text-secondary bg-primary text-xl font-semibold rounded-lg w-40 h-14">Donation</button>
+            <button id="history-btn" class="w-40 h-14 text-secondary text-xl rounded-lg font-semibold border-2 border-black">History</button>
+        </div>
+      </section>
+    </header>
+    <main>
+        <!-- modal -->
+        <dialog id="my-modal" class="modal">
+            <div class="modal-box flex flex-col justify-center items-center">
+                <h1 class="text-4xl font-bold text-secodary pt-3 pb-4">Congrats!</h1>
+                <img class="w-10 h-10" src="images/coin.png" alt="">
+                <p class="py-4 third pt-6">You Have Donated for Humankind</p>
+                <h2 class="text-3xl font-bold text-secodary">successfully</h2>
+                <div class="modal-action pb-3">
+                    <form method="dialog">
+                        <button class="btn">close confirmation</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- card section -->
+        <section id="card" class="container w-11/12 mx-auto">
+            <!-- card 1 -->
+            <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 border-2 rounded-2xl p-5 lg:p-7 mb-10">
+                <div>
+                    <img class="w-full h-full" src="images/noakhali.png" alt="">
+                </div>
+                <div>
+                    <div>
+                        <button class="flex justify-center items-center gap-2 bg-btn_bg w-36 h-11 rounded-lg p-3">
+                            <img src="images/coin.png" alt="">
+                            <p><span id="balance-1">100</span> BDT</p>
+                        </button>
+                        <h2 class="text-secondary text-xl font-bold my-5 lg:my-10">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p class="text-third font-light text-base">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                        <div class="flex flex-col lg:flex-col md:flex-row gap-0 lg:gap-0 md:gap-5 items-center">
+                            <input id="input-1" class="w-full h-14 lg:w-full md:w-3/6 border-2 placeholder:text-base rounded-lg my-5 lg:my-10 p-5" type="text" placeholder="Write Donation Amount">
+                            <button id="btn-1" class="w-full h-14 lg:w-full md:w-3/6 bg-primary rounded-lg text-xl font-semibold text-secondary">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 border-2 rounded-2xl p-5 lg:p-7 mb-10">
+                <div>
+                    <img class="w-full h-full rounded-xl" src="images/feni.png" alt="">
+                </div>
+                <div>
+                    <div>
+                        <button class="flex justify-center items-center gap-2 bg-btn_bg w-36 h-11 rounded-lg p-3">
+                            <img src="images/coin.png" alt="">
+                            <p><span id="balance-2">600</span> BDT</p>
+                        </button>
+                        <h2 class="text-secondary text-xl font-bold my-5 lg:my-10">Donate for Flood Relief in Feni,Bangladesh</h2>
+                        <p class="text-third font-light text-base">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                        <div class="flex flex-col lg:flex-col md:flex-row gap-0 lg:gap-0 md:gap-5 items-center">
+                            <input id="input-2" class="w-full h-14 lg:w-full md:w-3/6 border-2 placeholder:text-base rounded-lg my-5 lg:my-10 p-5" type="text" placeholder="Write Donation Amount">
+                            <button id="btn-2" class="w-full h-14 lg:w-full md:w-3/6 bg-primary rounded-lg text-xl font-semibold text-secondary">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 border-2 rounded-2xl p-5 lg:p-7 mb-10">
+                <div>
+                    <img class="w-full h-full rounded-xl" src="images/quota-protest.png" alt="">
+                </div>
+                <div>
+                    <div>
+                        <button class="flex justify-center items-center gap-2 bg-btn_bg w-36 h-11 rounded-lg p-3">
+                            <img src="images/coin.png" alt="">
+                            <p><span id="balance-3">2400</span> BDT</p>
+                        </button>
+                        <h2 class="text-secondary text-xl font-bold my-5 lg:my-10">Aid for Injured in the Quota Movement</h2>
+                        <p class="text-third font-light text-base">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                        <div class="flex flex-col lg:flex-col md:flex-row gap-0 lg:gap-0 md:gap-5 items-center">
+                            <input id="input-3" class="w-full h-14 lg:w-full md:w-3/6 border-2 placeholder:text-base rounded-lg my-5 lg:my-10 p-5" type="text" placeholder="Write Donation Amount">
+                            <button id="btn-3" class="w-full h-14 lg:w-full md:w-3/6 bg-primary rounded-lg text-xl font-semibold text-secondary">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 border-2 rounded-2xl p-5 lg:p-7 mb-10">
+                <div>
+                    <img class="w-full h-full rounded-xl" src="images/child.png" alt="">
+                </div>
+                <div>
+                    <div>
+                        <button class="flex justify-center items-center gap-2 bg-btn_bg w-36 h-11 rounded-lg p-3">
+                            <img src="images/coin.png" alt="">
+                            <p><span id="balance-4">1500</span> BDT</p>
+                        </button>
+                        <h2 class="text-secondary text-xl font-bold my-5 lg:my-10">Donate for Child Labor in Bangladesh</h2>
+                        <p class="text-third font-light text-base">Child labor is a serious social problem in Bangladesh. Thousands of children are working in various sectors of the country, especially in agriculture, construction, and factories. Many of them cannot go to school, thus being deprived of education. Child labor damages physical and mental health and hinders long-term social and economic development. Awareness against child labor is being raised through the efforts of the government and various organizations, but more effective steps are needed. It is everyone's responsibility to protect children's rights and ensure they have the opportunity to grow up in a safe, healthy environment. Come forward to help them.</p>
+                        <div class="flex flex-col lg:flex-col md:flex-row gap-0 lg:gap-0 md:gap-5 items-center">
+                            <input id="input-4" class="w-full h-14 lg:w-full md:w-3/6 border-2 placeholder:text-base rounded-lg my-5 lg:my-10 p-5" type="text" placeholder="Write Donation Amount">
+                            <button id="btn-4" class="w-full h-14 lg:w-full md:w-3/6 bg-primary rounded-lg text-xl font-semibold text-secondary">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 border-2 rounded-2xl p-5 lg:p-7 mb-10">
+                <div>
+                    <img class="w-full h-full rounded-xl" src="images/people.png" alt="">
+                </div>
+                <div>
+                    <div>
+                        <button class="flex justify-center items-center gap-2 bg-btn_bg w-36 h-11 rounded-lg p-3">
+                            <img src="images/coin.png" alt="">
+                            <p><span id="balance-5">3200</span> BDT</p>
+                        </button>
+                        <h2 class="text-secondary text-xl font-bold my-5 lg:my-10">Donate for Poor People in Bangladesh</h2>
+                        <p class="text-third font-light text-base">The number of poor people in Bangladesh is still high, and their living conditions are quite challenging. They have to work hard to support their families on a meager income, which often creates concerns about their health and education. Many poor families seek refuge in the cities, but the high cost of urban life makes them suffer even more. Increasing access to education, health care and employment is critical to the upliftment of the poor. To ensure the prosperity of the society, everyone's cooperation is necessary for the welfare of the poor people.</p>
+                        <div class="flex flex-col lg:flex-col md:flex-row gap-0 lg:gap-0 md:gap-5 items-center">
+                            <input id="input-5" class="w-full h-14 lg:w-full md:w-3/6 border-2 placeholder:text-base rounded-lg my-5 lg:my-10 p-5" type="text" placeholder="Write Donation Amount">
+                            <button id="btn-5" class="w-full h-14 lg:w-full md:w-3/6 bg-primary rounded-lg text-xl font-semibold text-secondary">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 6 -->
+            <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 border-2 rounded-2xl p-5 lg:p-7 mb-16">
+                <div>
+                    <img class="w-full h-full rounded-xl" src="images/palestine.png" alt="">
+                </div>
+                <div>
+                    <div>
+                        <button class="flex justify-center items-center gap-2 bg-btn_bg w-36 h-11 rounded-lg p-3">
+                            <img src="images/coin.png" alt="">
+                            <p><span id="balance-6">3200</span> BDT</p>
+                        </button>
+                        <h2 class="text-secondary text-xl font-bold my-5 lg:my-10">Donate for Helpless People in Palestine</h2>
+                        <p class="text-third font-light text-base">In Palestine, many people face profound challenges due to ongoing conflict and political instability. Daily life is marked by economic hardship, restricted access to basic services like healthcare and education, and the constant threat of violence. Families often struggle to secure food and safe shelter, while children grow up amid uncertainty and trauma. Despite their resilience and community spirit, the harsh realities of occupation and displacement leave many feeling helpless and in desperate need of support and advocacy for their rights and dignity.</p>
+                        <div class="flex flex-col lg:flex-col md:flex-row gap-0 lg:gap-0 md:gap-5 items-center">
+                            <input id="input-6" class="w-full h-14 lg:w-full md:w-3/6 border-2 placeholder:text-base rounded-lg my-5 lg:my-10 p-5" type="text" placeholder="Write Donation Amount">
+                            <button id="btn-6" class="w-full h-14 lg:w-full md:w-3/6 bg-primary rounded-lg text-xl font-semibold text-secondary">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- history section -->
+         <section>
+            <div id="history-list" class="hidden container w-11/12 mx-auto space-y-5 mb-10">
+            </div>
+         </section>
+    </main>
+    <!-- footer bg -->
+    <footer>
+        <div id="footer-bg" class="bg-nav_bg py-14">
+        </div>
+    </footer>
+    <script>
+        document.getElementById('blog-btn').addEventListener('click', function(){
+            window.location.href = 'blog.html';
+        });
+    </script>
+    <script src="js/utilities.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

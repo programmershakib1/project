@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 B10</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind and daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind CSS configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(171, 239, 95)',
+                        secondary: 'rgb(73, 73, 73)',
+                        tertiary: 'rgb(115, 115, 115)',
+                        quaternary: 'rgba(171, 239, 95, 0.5)',
+                        footer_bg: 'rgb(28, 28, 28)',
+                        main_bg: '#f3f4f6',
+                        menu: 'rgb(233, 233, 233)',
+                        icon: 'rgb(255, 255, 255)',
+                    },
+                    fontFamily: {
+                        manrope: 'Manrope',
+                    },
+                    backgroundImage: {
+                        project_bg: "url('./images/bg.jpg')",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-manrope">
+    <header>
+    <!-- banner section -->
+     <section class="bg-gradient-to-b from-gray-50 to-white">
+    <!-- nav part -->
+        <nav class="container w-11/12 mx-auto py-10">
+            <div class="flex items-center justify-between">
+         <!-- first part -->
+               <div class="flex items-center gap-1 ml-3 lg:ml-0">
+                  <div class="w-9 h-9 bg-primary flex flex-col justify-center items-center rounded-full cursor-pointer">
+                     <i class="fa-solid fa-arrow-right -rotate-45 text-base"></i>
+                  </div>
+                  <div>
+                     <h2 class="cursor-pointer text-black text-3xl font-bold">Rinterio</h2>
+                  </div>
+               </div>
+         <!-- second part -->
+               <div class="hidden lg:block">
+                  <ul class="cursor-pointer font-bold text-tertiary flex gap-11">
+                     <li class="hover:text-black text-secondary">Home</li>
+                     <li class="hover:text-black">Services</li>
+                     <li class="hover:text-black">Portfolio</li>
+                     <li class="hover:text-black">Blogs</li>
+                     <li class="hover:text-black">Contact Us</li>
+                  </ul>
+               </div>
+         <!-- third part -->
+               <div class="hidden lg:block md:block">
+                  <div class="flex items-center gap-4">
+                     <div class="flex gap-4">
+                        <div class="flex justify-center items-center rounded-full w-7 h-7 bg-white p-5 shadow text-secondary cursor-pointer">
+                           <!-- same icon premium -->
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="flex justify-center items-center rounded-full w-7 h-7 bg-white p-5 shadow text-secondary cursor-pointer">
+                           <!-- same icon premium -->
+                           <i class="fa-solid fa-cart-shopping"></i>
+                        </div>                               
+                     </div>
+                     <div>
+                        <a class="btn w-10/12 border-none lg:w-52 md:w-56 text-xl font-bold bg-primary rounded-3xl">Book Consult <div class="w-8 h-8 bg-black flex flex-col justify-center items-center rounded-full">
+                           <i class="fa-solid fa-arrow-right -rotate-45 text-base text-icon"></i>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+         <!-- dropdown -->
+              <div class="dropdown lg:hidden md:hidden dropdown-end">
+                  <div tabindex="0" role="button">
+                    <div>
+                       <div class="w-[50px] h-[50px] bg-white rounded-full lg:hidden flex items-center justify-center shadow p-6">
+                       <i class="fa-solid fa-bars text-2xl text-tertiary"></i>
+                       </div>
+                     </div>
+                  </div>
+                  <ul
+                     tabindex="0"
+                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow space-y-2
+                     3">
+                     <li class="hover:text-black text-secondary">Home</li>
+                     <li class="hover:text-black">Services</li>
+                     <li class="hover:text-black">Portfolio</li>
+                     <li class="hover:text-black">Blogs</li>
+                    <li class="hover:text-black">Contact Us</li>
+                  </ul>
+               </div>
+            </div>
+        </nav>
+   <!-- banner part -->
+      <div class="container mx-auto lg:mb-20">
+        <!-- image -->
+           <div class="flex flex-col items-center px-12 lg:px-0">
+              <img src="images/banner.png" alt="">
+           </div>
+        <!-- content -->
+           <div class="px-6 lg:px-0">
+              <h1 class="text-5xl lg:text-6xl font-extrabold text-center py-4">A barn house of this design has a <br> striking appearance</h1>
+              <p class="font-medium text-center py-8">This house looks very nice. It is made with modern technology. Here in many parts the use of wood, the use of stone <br> along with large windows are given, due to which it makes the view more attractive.</p>
+              <div class="text-center">
+                  <button class="btn w-11/12 lg:w-52 md:w-52 rounded-full bg-quaternary lg:font-semibold font-bold text-lg mb-10 lg:mb-0 border-solid border-primary">View Details <div class="w-8 h-8 bg-primary flex flex-col justify-center items-center rounded-full">
+                  <i class="fa-solid fa-arrow-right -rotate-45 text-base"></i>
+                  </div></button>
+              </div>
+           </div>
+      </div>
+     </section>
+    </header>
+    <main class="bg-main_bg">
+    <!-- about section -->
+     <section>
+         <div class="container w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- content -->
+             <div class="h-[550px] lg:h-[550px] md:h-[400px] text-center lg:text-left">
+                 <div class="relative lg:mt-24">
+                    <img class="absolute -top-12 -left-12 hidden lg:block" src="images/vector.png" alt="">
+                     <button class="bg-white mt-8 lg:mt-2 mb-8 px-5 font-bold rounded-3xl">
+                     <h2><i class="fa-solid fa-arrow-right"></i> About Us</h2>
+                     </button>
+                 </div>
+                 <h2 class="text-4xl font-black">We design thoughtful, <br> liveable spaces</h2>
+                 <p class="text-secondary font-medium my-8">A lot of glass is used in this room, which is the main attraction of this room. This room also <br> gets a lot of sunlight.</p>
+                 <div class="space-y-5 lg:space-y-5 md:space-y-0 grid grid-cols-1 lg:grid-cols-1 md:grid-cols-2 gap-0 lg:gap-0 md:gap-5">
+                    <div class="flex lg:items-center gap-4 bg-white rounded-2xl py-4 pl-3">
+                        <div>
+                           <img class="w-12 h-12 lg:w-full lg:h-full" src="images/commercial.png" alt="">
+                        </div>
+                        <div class="space-y-3 text-left">
+                           <h2 class="font-bold text-xl">Commercial</h2>
+                           <p class="text-tertiary font-medium">Everything used in this room is very <br> modern and beautiful.</p>
+                        </div>
+                    </div>
+                    <div class="flex lg:items-center gap-4 bg-white rounded-2xl py-4 pl-3">
+                        <div>
+                           <img class="w-12 h-12 lg:w-full lg:h-full" src="images/residential.png" alt="">
+                        </div>
+                        <div class="space-y-3 text-left">
+                           <h2 class="font-bold text-xl">Residential</h2>
+                           <p class="text-tertiary font-medium">This house has three floors <br> with a total of 26 rooms.</p>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+            <!-- img -->
+             <div class="lg:h-[550px] md:h-96 rounded-2xl mt-14 lg:mt-16 md:mt-0">
+                 <img class="h-64 w-full lg:h-full md:h-full" src="images/rectangle.png" alt="">
+             </div>
+         </div>
+     </section>
+   <!-- number section -->
+     <section>
+        <div class="container bg-white w-11/12 mx-auto rounded-2xl mt-10 lg:mt-20 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-12 text-center py-12">
+            <div class="flex flex-col space-y-3">
+               <i class="fa-regular fa-message text-lg text-tertiary"></i>
+               <h2 class="text-4xl font-bold text-secondary">235+</h2>
+               <p class="text-tertiary font-medium">Happy Client Review</p>
+            </div>
+            <div class="flex flex-col space-y-3">
+               <i class="fa-solid fa-calendar-days text-lg text-tertiary"></i>
+               <h2 class="text-4xl font-bold text-secondary">50+</h2>
+               <p class="text-tertiary font-medium">Work Departments</p>
+            </div>
+            <div class="flex flex-col space-y-3">
+               <i class="fa-solid fa-users text-lg text-tertiary"></i>
+               <h2 class="text-4xl font-bold text-secondary">30k+</h2>
+               <p class="text-tertiary font-medium">Our Happy Client</p>
+            </div>
+            <div class="flex flex-col space-y-3">
+               <i class="fa-regular fa-user text-lg text-tertiary"></i>
+               <h2 class="text-4xl font-bold text-secondary">307+</h2>
+               <p class="text-tertiary font-medium">Staff Members</p>
+            </div>
+         </div>
+     </section>
+    <!-- work section -->
+     <section">
+        <div class="container w-11/12 mx-auto mt-10 lg:mt-24">
+      <!-- content -->
+          <div class="text-center space-y-5 lg:space-y-8">
+             <button class="bg-white font-bold py-2 px-5 rounded-3xl">
+              <h2><i class="fa-solid fa-arrow-right"></i> How we works</h2>
+             </button>
+             <h2 class="text-4xl font-extrabold">Our Works Process</h2>
+             <p class="text-secondary font-medium">We work within certain rules. It makes work very easy and accurate. Below is an example of this. In the process in <br> which we do housework, I hope you can understand if you follow the following cards.</p>
+          </div>
+      <!-- card -->
+          <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5 mt-10">
+             <!-- 1 -->
+             <div class="h-60 bg-pink-200 pt-11 pl-6 pr-6 rounded-2xl space-y-2">
+               <img src="images/concept.png" alt="">
+               <h4 class="text-xl font-extrabold">Concept</h4>
+               <p class="text-secondary font-medium">First of all thinking about the place, this is the main topic of the work.</p>
+            </div>
+        <!-- 2 -->
+            <div class="h-60 bg-yellow-200 pt-11 pl-6 pr-6 rounded-2xl space-y-2">
+               <img src="images/flow-chart.png" alt="">
+               <h4 class="text-xl font-extrabold">Design Process</h4>
+               <p class="text-secondary font-medium">Design How beautiful a house look depends on its design.</p>
+            </div>
+            <!-- 3 -->
+            <div class="h-60 bg-green-200 pt-11 pl-6 pr-6 rounded-2xl space-y-2">
+               <img src="images/vision.png" alt="">
+               <h4 class="text-xl font-extrabold">Supervision</h4>
+               <p class="text-secondary font-medium">It is also an aspect of thinking that it will be better to do the house in which position.</p>
+            </div>
+        <!-- 4 -->
+            <div class="h-60 bg-blue-300 pt-11 pl-6 pr-6 rounded-2xl space-y-2 lg:mb-20">
+               <img src="images/budget-planning.png" alt="">
+               <h4 class="text-xl font-extrabold">Budget Planning</h4>
+               <p class="text-secondary font-medium">Budget planning is also a key issue. If this is done correctly then everything is fine.</p>
+            </div>
+         </div>
+        </div>
+     </section>
+    <!-- portfolio section -->
+     <section class="lg:bg-white">
+         <div class="container w-11/12 mx-auto">
+           <!-- content -->
+            <div class="text-center space-y-8">
+               <button class="bg-quaternary font-semibold py-2 px-5 rounded-3xl mt-10 lg:mt-24">
+               <h2><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</h2>
+               </button>
+               <h2 class="text-4xl font-extrabold">Our Latest Portfolio</h2>
+               <p class="text-secondary font-medium">Some of our new portfolios. We have done these recent works. Below are some of its models. These will give you a <br> better idea of ​​our work. To know more, there are more options below.</p>
+            </div>
+           <!-- card -->
+            <div class="grid grid-cols-1 lg:grid-cols-10 gap-5 md:grid-cols-2 mt-10">
+               <div class="lg:col-span-7 md:col-span-2 flex flex-col lg:flex-row md:flex-row gap-6 border-solid border-inherit border-2 rounded-2xl p-5 lg:h-60 bg-white">
+                  <div>
+                     <img class="w-full h-56 lg:w-80 lg:h-full" src="images/img1.png" alt="">
+                  </div>
+                  <div class="flex flex-col justify-center space-y-7">
+                    <h4 class="text-2xl font-bold text-secondary">Commercial</h4>
+                    <p class="text-tertiary">These are some of our recent work portfolios. You can get an <br>idea by looking at our works. Click the button below to know more.</p>
+                    <div class="flex gap-3">
+                    <button class="font-bold text-xl">View Details</button><div class="w-9 h-9 bg-primary flex flex-col justify-center items-center rounded-full">
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-base"></i>
+                    </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="lg:col-span-3 border-solid border-inherit border-2 rounded-2xl p-5 lg:h-60 bg-white lg:block md:hidden">
+                  <img class="w-full h-56 lg:h-full" src="images/img2.png" alt="">
+               </div>
+            </div>
+         <!-- for medium device responsiveness -->
+         <!-- start -->
+            <div class="hidden lg:hidden md:block my-8">
+               <div class="grid grid-cols-2 gap-5">
+                  <div class="border-solid border-inherit border-2 rounded-2xl p-5 bg-white">
+                     <img class="w-full h-56" src="images/img2.png" alt="">
+                  </div>
+                  <div class="border-solid border-inherit border-2 rounded-2xl p-5 bg-white">
+                     <img class="w-full h-56" src="images/img5.png" alt="">
+                  </div>
+               </div>
+            </div>
+         <!-- end -->
+            <div class="grid grid-cols-1 lg:grid-cols-9 gap-5 mt-6">
+               <div class="lg:col-span-2 border-solid border-inherit border-2 rounded-2xl p-5 lg:h-60 bg-white hidden lg:block">
+                  <img class="w-full h-56 lg:h-full" src="images/img3.png" alt="">
+               </div>
+            <!-- mobile device exchange image -->
+            <!-- start -->
+               <div class="lg:hidden md:hidden border-solid border-inherit border-2 rounded-2xl p-5 bg-white">
+                  <img class="w-full h-56" src="images/img5.png" alt="">
+               </div>
+            <!-- end -->
+               <div class="lg:col-span-5 flex flex-col lg:flex-row md:flex-row gap-6 border-solid border-inherit border-2 rounded-2xl p-5 lg:h-60 bg-white">
+                  <div>
+                     <img class="w-full h-56 lg:w-80 lg:h-full" src="images/img4.png" alt="">
+                  </div>
+                  <div class="flex flex-col justify-center space-y-7">
+                    <h4 class="text-2xl font-bold text-secondary">Commercial</h4>
+                    <p class="text-tertiary">You can get an idea by looking at our works. Click the <br> button below to know more.</p>
+                    <div class="flex gap-3">
+                    <button class="font-bold text-xl">View Details</button><div class="w-9 h-9 bg-primary flex flex-col justify-center items-center rounded-full">
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-base"></i>
+                    </div>
+                    </div>
+                  </div>
+               </div>
+            <!-- mobile device Extra image -->
+            <!-- start -->
+               <div class="border-solid border-inherit border-2 rounded-2xl p-5 bg-white lg:hidden md:hidden">
+                  <img class="w-full h-56" src="images/img3.png" alt="">
+               </div>
+            <!-- end -->
+               <div class="lg:col-span-2 border-solid border-inherit border-2 rounded-2xl p-5 lg:h-60 mb-10 lg:mb-20 bg-white lg:block md:hidden">
+                  <img class="w-full h-56 lg:h-full" src="images/img5.png" alt="">
+               </div>
+            </div>
+            <!-- for medium device responsiveness -->
+            <!-- start -->
+            <div class="hidden lg:hidden md:block my-8">
+               <div class="grid grid-cols-2 gap-5">
+                   <div class="border-solid border-inherit border-2 rounded-2xl p-5 bg-white">
+                       <img class="w-full h-56" src="images/img3.png" alt="">
+                   </div>
+                   <div class="border-solid border-inherit border-2 rounded-2xl p-5 bg-white">
+                       <img class="w-full h-56" src="images/img5.png" alt="">
+                   </div>
+               </div>
+            </div>
+            <!-- end -->
+         </div>
+     </section>
+    <!-- news section -->
+     <section>
+        <div class="container w-11/12 mx-auto">
+         <!-- content -->
+          <div class="text-center space-y-8">
+             <button class="bg-quaternary font-semibold py-2 px-5 rounded-3xl lg:mt-24">
+             <h2><i class="fa-solid fa-arrow-right"></i> Rinterio News</h2>
+             </button>
+             <h2 class="text-4xl font-extrabold">Read Our Articles and News</h2>
+             <p class="text-secondary font-medium">Below are some of our articles and news. From these you can get an idea of ​​the success of our work.</p>
+          </div>
+         <!-- card -->
+          <div class="mt-8 lg:mt-16 grid grid-cols-1 lg:grid-cols-3 gap-4">
+             <!-- 1 -->
+              <div class="flex flex-col lg:flex-col md:flex-row gap-5 bg-white p-5 rounded-2xl">
+                 <div>
+                    <img class="w-full h-full" src="images/article1.png" alt="">
+                 </div>
+                 <div>
+                   <div class="flex gap-4 items-center text-tertiary font-medium py-4">
+                     <i class="fa-regular fa-calendar-days"></i>
+                     <p>July14, 2024</p>
+                     <i class="fa-regular fa-user"></i>
+                     <p>By Admin</p>
+                   </div>
+                   <div>
+                     <h2 class="text-xl font-bold text-secondary">How to choose the furniture right  of your home.</h2>
+                     <p class="py-5 tertiary font-medium">Choose modern furniture for your home. Click the button below to know more.</p>
+                     <div class="flex gap-3">
+                       <button class="font-bold text-xl">Read More</button><div class="w-9 h-9 bg-primary flex flex-col justify-center items-center rounded-full">
+                       <i class="fa-solid fa-arrow-right -rotate-45 text-base"></i></div>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+             <!-- 2 -->
+              <div class="flex flex-col lg:flex-col md:flex-row gap-5 bg-white p-5 rounded-2xl">
+                <div>
+                  <img class="w-full h-full" src="images/article2.png" alt="">
+                </div>
+                <div>
+                  <div class="flex gap-4 items-center text-tertiary font-medium py-4">
+                     <i class="fa-regular fa-calendar-days"></i>
+                     <p>July14, 2024</p>
+                     <i class="fa-regular fa-user"></i>
+                     <p>By Admin</p>
+                  </div>
+                  <div>
+                     <h2 class="text-xl font-bold text-secondary">How to choose the furniture right  of your home.</h2>
+                     <p class="py-5 tertiary font-medium">Choose modern furniture for your home. Click the button below to know more.</p>
+                     <div class="flex gap-3">
+                     <button class="font-bold text-xl">Read More</button><div class="w-9 h-9 bg-primary flex flex-col justify-center items-center rounded-full">
+                     <i class="fa-solid fa-arrow-right -rotate-45 text-base"></i></div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+             <!-- 3 -->
+             <div class="flex flex-col lg:flex-col md:flex-row gap-5 bg-white p-5 rounded-2xl">
+               <div>
+                  <img class="w-full h-full" src="images/article3.png" alt="">
+               </div>
+               <div>
+                  <div class="flex gap-4 items-center text-tertiary font-medium py-4">
+                     <i class="fa-regular fa-calendar-days"></i>
+                     <p>July14, 2024</p>
+                     <i class="fa-regular fa-user"></i>
+                     <p>By Admin</p>
+                  </div>
+                  <div>
+                     <h2 class="text-xl font-bold text-secondary">How to choose the furniture right  of your home.</h2>
+                     <p class="py-5 tertiary font-medium">Choose modern furniture for your home. Click the button below to know more.</p>
+                     <div class="flex gap-3">
+                     <button class="font-bold text-xl">Read More</button><div class="w-9 h-9 bg-primary flex flex-col justify-center items-center rounded-full">
+                     <i class="fa-solid fa-arrow-right -rotate-45 text-base"></i></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+     </section>
+    <!-- challenge section -->
+     <section>
+         <div class="container w-11/12 mx-auto">
+             <!-- content -->
+            <div class="text-center space-y-8">
+                <button class="bg-quaternary font-semibold py-2 px-5 rounded-3xl mt-10 lg:mt-24">
+                  <h2 class="font-bold"><i class="fa-solid fa-arrow-right"></i> Explore More</h2>
+                </button>
+                <h2 class="text-4xl font-extrabold">Advanced Features</h2>
+                <p class="text-secondary font-medium">We have been working with your trust for a long time. After a few days we come up with some new designs. <br> Below are some new designs. All are standard and modern. Select if you like.</p>
+            </div>
+            <!-- card -->
+             <div class="mt-10 lg:mt-24">
+                <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5">
+                  <!-- 1 -->
+                  <div>
+                    <div class="h-60 lg:h-72 bg-white p-4 rounded-xl">
+                       <img class="w-full h-full rounded-xl" src="images/challenge1.png" alt="">
+                    </div>
+                    <div class="badge badge-secondary bg-black border-none">NEW</div>
+                    <div class="flex flex-col items-center justify-center">
+                       <button class="btn btn-outline w-24">Select</button>
+                    </div>
+                  </div>
+                 <!-- 2 -->
+                  <div>
+                     <div class="h-60 lg:h-72 bg-white p-4 rounded-xl">
+                        <img class="w-full h-full rounded-xl" src="images/challenge2.jpg" alt="">
+                     </div>
+                     <div>
+                        <div class="badge badge-secondary bg-black border-none">NEW</div>
+                        <div class="flex flex-col items-center justify-center">
+                           <button class="btn btn-outline w-24">Select</button>
+                        </div>
+                     </div>
+                  </div>
+                <!-- 3 -->
+                  <div class="lg:block md:hidden mb-6">
+                     <div class="h-60 lg:h-72 bg-white p-4 rounded-xl">
+                        <img class="w-full h-full rounded-xl" src="images/challenge3.jpg" alt="">
+                     </div>
+                      <div>
+                        <div class="flex flex-col items-center justify-center">
+                          <button class="btn btn-outline w-24 mt-6">Select</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5">
+                  <!-- 4 -->
+                  <div class="lg:block md:hidden">
+                    <div class="h-60 lg:h-72 bg-white p-4 rounded-xl">
+                       <img class="w-full h-full rounded-xl" src="images/challenge4.jpg" alt="">
+                    </div>
+                    <div>
+                      <div class="flex flex-col items-center justify-center">
+                        <button class="btn btn-outline w-24 mt-6">Select</button>
+                      </div>
+                    </div>
+                  </div>
+                 <!-- 5 -->
+                  <div>
+                     <div class="h-60 lg:h-72 bg-white p-4 rounded-xl">
+                        <img class="w-full h-full rounded-xl" src="images/challenge5.jpg" alt="">
+                     </div>
+                      <div>
+                         <div class="badge badge-secondary bg-black border-none">NEW</div>
+                         <div class="flex flex-col items-center justify-center">
+                           <button class="btn btn-outline w-24">Select</button>
+                         </div>
+                      </div>
+                  </div>
+                <!-- 6 -->
+                  <div class="mb-6">
+                     <div class="h-60 lg:h-72 bg-white p-4 rounded-xl">
+                        <img class="w-full h-full rounded-xl" src="images/challenge6.jpg" alt="">
+                     </div>
+                     <div>
+                        <div class="flex flex-col items-center justify-center">
+                          <button class="btn btn-outline w-24 mt-6">Select</button>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+             </div>
+             <div class="mt-6 mb-12">
+                <div class="flex justify-center lg:flex-row gap-10">
+                   <img src="images/facebook.png" alt="">
+                   <img src="images/instagram.png" alt="">
+                   <img src="images/twitter.png" alt="">
+                </div>
+             </div>
+         </div>
+       <!-- white space -->
+        <div class="bg-white h-2">
+        </div>
+     </section>
+    <!-- project section -->
+     <section class="bg-project_bg bg-cover bg-no-repeat bg-center bg-opacity-70">
+         <div class="container w-11/12 mx-auto">
+      <!-- content -->
+          <div class="text-center space-y-8">
+             <button class="bg-quaternary font-semibold py-2 px-5 rounded-3xl mt-10 lg:mt-24">
+               <h2 class="font-bold"><i class="fa-solid fa-arrow-right"></i> Let’s Connect</h2>
+             </button>
+             <h2 class="text-4xl font-extrabold">Let’s Discuss Next Project</h2>
+             <p class="text-secondary font-medium">Project discussion is an important issue. It is very useful for proper functioning. Email us with your correct <br> information to discuss your next project. Contact for any need.</p>
+          </div>
+      <!-- input -->
+          <div class="flex flex-wrap gap-4 justify-center pt-10 pb-4">
+             <input class="h-14 w-11/12 lg:w-[33%] md:w-[33%] px-4 rounded-3xl" type="text" placeholder="First Name*">
+             <input class="h-14 w-11/12 lg:w-[33%] md:w-[33%] px-4 rounded-3xl" type="text" placeholder="Last Name*">
+             <input class="h-14 w-11/12 lg:w-[33%] md:w-[33%] px-4 rounded-3xl" type="text" placeholder="Phone Number*">
+             <input class="h-14 w-11/12 lg:w-[33%] md:w-[33%] px-4 rounded-3xl" type="text" placeholder="Email Number*">
+          </div>
+      <!-- text area -->
+          <div class="flex justify-center">
+             <textarea class="w-11/12 h-52 lg:w-8/12 md:w-[68%] rounded-3xl pt-6 pl-6 resize-none" name="" id="" placeholder="Write your message here"></textarea>
+          </div>
+      <!-- send button -->
+           <div class="text-center mt-6">
+              <a class="btn border-none w-11/12 lg:w-8/12 md:w-[68%] h-14 text-xl font-extrabold bg-primary rounded-full mb-8 lg:mb-16">Send Mail <div class="w-8 h-8 bg-black flex flex-col justify-center items-center rounded-full">
+              <i class="fa-solid fa-arrow-right -rotate-45 text-base text-icon"></i>
+              </div></a>
+           </div>
+         </div>
+     </section>
+    </main>
+    <footer>
+    <!-- footer section -->
+       <section class="bg-footer_bg h-[700px] lg:h-[480px] md:h-[450px]">
+           <div class="container mx-auto">
+            <!-- logo -->
+               <div class="text-center">
+                  <a class="btn text-menu btn-ghost text-3xl font-bold mt-24">
+                  <div class="w-8 h-8 bg-primary flex flex-col justify-center items-center rounded-full">
+                      <i class="fa-solid fa-arrow-right -rotate-45 text-base text-black"></i>
+                  </div>
+                  Rinterio</a>
+                  <p class="text-tertiary py-6 px-8 lg:px-0">Our team is working with great loyalty. We try our best. I will continue like this in the future. <br> Always support us. Contact for any need.</p>
+               </div>
+            <!-- menu -->
+               <div>
+                  <ul class="text-menu font-medium flex flex-col lg:flex-row md:flex-row gap-6 lg:gap-32 md:gap-24 justify-center items-center my-6">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+               </div>
+            <!-- last button -->
+               <div class="text-center mt-10 lg:my-14 lg:pb-20">
+                   <a class="btn w-10/12 border-none lg:w-52 md:w-52 text-xl font-bold bg-primary rounded-full">Book Consult <div class="w-8 h-8 bg-black flex flex-col justify-center items-center rounded-full">
+                   <i class="fa-solid fa-arrow-right -rotate-45 text-base text-icon"></i>
+                   </div></a>
+               </div>
+           </div>
+       </section>
+    </footer>
+</body>
+</html>

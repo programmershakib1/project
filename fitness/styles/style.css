@@ -1,0 +1,1159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+    font-family: "Inter", sans-serif;
+}
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* banner section styles */
+.banner-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.894) 20%, rgba(14, 12, 12, 0.898)60%, rgb(2, 2, 2) 100%);
+}
+/* navbar part */
+.navbar-section{
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-top: 57px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-content h4{
+    color: rgb(230, 83, 60);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.navbar{
+    border: 1px solid rgba(255, 255, 255, 0.068);
+    border-radius: 39px;
+    padding: 0 25px 0 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.navbar p{
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.home-btn{
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+    width: 92px;
+    height: 90%;
+    margin-left: 3px;
+    border: none;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+}
+.bars{
+    display: none;
+}
+/* banner part */
+.banner-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    gap: 150px;
+}
+.banner-content{
+    max-width: 600px;
+    margin-top: 80px;
+}
+.banner-content h2{
+    color: rgb(255, 255, 255);
+    font-size: 4.87rem;
+    font-weight: 800;
+    margin-bottom: 28px;
+    line-height: 80px;
+}
+#shape{
+    font-family: miama;
+    color: rgb(255, 255, 255);
+    font-size: 7.87rem;
+    font-weight: 500;
+}
+.banner-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+.banner-content button{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+}
+#download{
+    color: white;
+    background-color: rgba(17, 17, 17, 0.897);
+    border: 1px solid white;
+    margin-left: 10px;
+}
+.banner-img{
+    margin-top: 30px;
+    position: relative;
+}
+.banner-img img{
+    width: 100%;
+}
+.first-shape{
+    width: 190px;
+    height: 98px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+}
+.first-shape h2{
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 10px 0px 4px 23px;
+}
+.first-shape p{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: .8rem;
+    font-weight: 400;
+    margin-left: 23px;
+}
+.second-shape{
+    width: 200px;
+    height: 96px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    left: -38%;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
+    margin: 0px 10px 0px 20px;
+}
+.second-shape h2{
+    color: rgb(250, 250, 249);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+.second-shape p{
+    color: rgba(239, 237, 232, 0.65);
+    font-size: .9rem;
+    font-weight: 400;
+}
+.play{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    display: none;
+}
+/* habits section styles  */
+.habit-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: black;
+}
+/* habit part */
+.habit-part{
+    max-width: 1044px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: rgb(0, 0, 0);
+}
+.habit-section-content{
+    max-width: 671px;
+    margin: 0 auto;
+}
+.habit-section-content h3{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.habit-section-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+.habit-section-card{
+    display: flex;
+    justify-content: space-around;
+}
+.habit-card-container{
+    max-width: 230px;
+    margin-top: 58px;
+}
+.habit-card-container h5{
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+}
+.habit-card-container p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 6px;
+}
+.habit-card-img{
+    display: flex;
+    justify-content: center;
+}
+.habit-card-img img{
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid rgba(71, 61, 61, 0.5);
+}
+/* ran part */
+.ran-part{
+    max-width: 1060px;
+    margin: 0 auto;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.ran-part-content{
+    max-width: 443px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0px 30px 45px;
+}
+.ran-part-content h3{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 800;
+}
+.ran-part-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 14px;
+}
+.ran-part-content button{
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    margin-top: 34px;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.ran-part-img{
+    max-width: 366px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    margin: 0px 25px 0px 0px;
+}
+.ran-part-img img{
+    width: 100%;
+    height: 85%;
+    border-radius: 18px;
+    object-fit: none;
+    object-position: 66% 31%;
+}
+/* training section styles */
+.training-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: black;
+}
+.training-section-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.training-section-content h2{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.training-section-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 30px 0px 50px 0px;
+}
+.first-part{
+    display: flex;
+    height: 200px;
+}
+.img1{
+    width: 35%;
+    background-image:linear-gradient(rgba(6, 255, 210, 0.5), rgba(6, 255, 210, 0.5)), url(../images/exercise1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img1 p{
+    margin: 160px 0px 0px 20px;
+}
+.img2{
+    width: 70%;
+    background-image:linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url(../images/exercise2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img2 p{
+    margin: 20px 0px 0px 20px;
+    color: white;
+}
+.img3{
+    width: 50%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/exercise3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img3 p{color: white;
+    margin: 160px 0px 0px 20px;
+}
+.second-part{
+    display: flex;
+    height: 200px;
+}
+.img4{
+    width: 55%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/exercise4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img4 p{
+    color: white;
+    margin: 20px 0px 0px 290px;
+}
+.img5{
+    width: 35%;
+    background-image:linear-gradient(rgba(66, 255, 0, 0.3), rgba(66, 255, 0, 0.3)), url(../images/exercise5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img5 p{
+    color: white;
+    margin: 160px 0px 0px 20px;
+}
+.img6{
+    width: 50%;
+    background-image:linear-gradient(rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)), url(../images/exercise6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img6 p{
+    color: white;
+    margin: 160px 0px 0px 20px;
+}
+/* calculate section styles */
+/* bmi part */
+.bmi-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: black;
+}
+.bmi-content{
+    max-width: 670px;
+    margin: 0 auto;
+    margin-top: 88px;
+    margin-bottom: 88px;
+}
+.bmi-content h4{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 800;
+}
+.bmi-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+}
+/* calculate part */
+.calculate-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(34, 34, 34);
+}
+.calculate-section-container{
+    display: flex;
+}
+.calculate-table-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calculate-table-section h4{
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+table{
+    max-width: 55%;
+    min-height: 230px;
+    border-collapse: collapse;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 75px;
+}
+td, th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    padding: 5px 10px 5px 20px;
+}
+th{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 15px 30px;
+}
+.calculate-input-section{
+    width: 50%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 150px;
+}
+.calculate-input-section h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-left: 10px;
+}
+.calculate-input-section p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-left: 10px;
+}
+.input-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 37px;
+}
+.calculate-input-section input, select{
+    width: 45%;
+    height: 48px;
+    border: none;
+    margin: 7px;
+    padding: 12px 40px 12px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+.calculate-input-section select{
+    color: rgba(255, 255, 255, 0.6);
+    padding: 12px 40px 12px 15px;
+    border-right: 16px solid transparent;
+}
+.select-activity select{
+    color: rgba(255, 255, 255, 0.6);
+    width: 92.5%;
+}
+.calculate-input-section button{
+    width: 224px;
+    height: 54px;
+    margin: 25px 0px 30px 10px;
+    border: none;
+    border-radius: 42px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    background: rgb(230, 83, 60);
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+  }
+/* meet section styles */
+.meet-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: black;
+}
+.meet-section-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.meet-section-content{
+    max-width: 670px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+.meet-section-content h3{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+.meet-section-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 70px;
+}
+.meet-section-img{
+    max-width: 1060px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.meet-section-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+}
+.trainer-name{
+    margin-top: -70px;
+    margin-left: 18px;
+}
+.meet-section-img h4{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.meet-section-img p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.will{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+/* challenge section styles */
+.challenge-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: black;
+}
+.challenge-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.challenge-content h2{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+}
+.challenge-content p{
+    width: 70%;
+    margin: 20px auto;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 24px;
+}
+.challenge-content button{
+    width: 224px;
+    height: 54px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 42px;
+    background-color: rgba(17, 17, 17, 0.415);
+    border: 1px solid white;
+}
+.discount{
+    position: absolute;
+    left: 80%;
+    top: 0%;
+    transform: rotate(30deg);
+    display: none;
+}
+.challenge-section :hover .discount{
+    display: block;
+}
+.discount p{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-right: 80px;
+    line-height: 25px;
+}
+.discount h4{
+    color: white;
+    font-size: 2rem;
+    margin-left: 45px;
+}
+.challenge-content img{
+    width: 40%;
+    margin-left: 45px;
+}
+.challenge-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.challenge-card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.challenge-card img{
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+.challenge-card button{
+    width: 224px;
+    height: 54px;
+    border: none;
+    margin: 20px 0px 30px 0px;
+    border-radius: 42px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    background: rgb(230, 83, 60);
+}
+.contact{
+    text-align: center;
+}
+.contact h2{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 20px 0px;
+}
+.contact hr{
+    max-width: 600px;
+    color: rgb(255, 255, 255);
+    margin: 30px auto;
+}
+.contact img{
+    margin: 10px 10px 50px 10px;
+}
+/* footer section styles */
+.footer-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid rgb(20, 18, 18);
+    background-color: rgb(34, 34, 34);
+}
+.footer-section-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 66px 190px 100px 180px;
+}
+.footer-first-part{
+    max-width: 445px;
+}
+.footer-first-part h4{
+    color: rgb(230, 83, 60);
+    font-size: 4.37rem;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.footer-first-part p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+.footer-second-part{
+    max-width: 515px;
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+.footer-second-part h4{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.footer-second-part p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.43rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+hr{
+    max-width: 1080px;
+    color: rgba(255, 255, 255, 0);
+    opacity: 0.3;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+
+/* small device media query  */
+
+
+
+@media screen and (max-width: 576px){
+    body{
+        background-color: black;
+    }
+     .navbar{
+        display: none;
+     }
+     .nav-content h4{
+        margin-left: 30px;
+     }
+     .bars{
+        margin-right: 30px;
+        color: white;
+        display: block;
+        margin-top: 10px;
+     }
+     .banner-section{
+        background-image: linear-gradient(to bottom, rgba(51, 46, 46, 0.43) 5%, rgba(38, 33, 33, 0.897)50%, rgb(2, 2, 2) 100%);
+     }
+     .banner-container{
+        flex-direction: column;
+        margin: 30px;
+        gap: 1px;
+     }
+     .banner-content{
+        margin-top: 30px;
+     }
+     .banner-content h2{
+        width: 85%;
+        font-size: 2.2rem;
+        line-height: 50px;
+     }
+     .banner-content p{
+        width: 90%;
+     }
+     #shape{
+        font-size: 5rem;
+    }
+     .banner-btn{
+        display: flex;
+        margin-bottom: 20px;
+     }
+     #club{
+        display: none;
+     }
+     .first-shape{
+        width: 160px;
+        height: 85px;
+        top: 10%;
+        left: 55%;
+     }
+     .first-shape p{
+        font-size: .7rem;
+        font-weight: 400;
+        margin-left: 23px;
+    }
+    .second-shape{
+        width: 170px;
+        height: 85px;
+        top: 43%;
+        left: 5%;
+    }
+    .circle{
+        margin: 0px 10px 0px 13px;
+    }
+    .play{
+        display: block;
+    }
+    .first-shape h2{
+        font-size: 2rem;
+        font-weight: 800;
+        margin: 10px 0px px 23px;
+    }
+    .second-shape h2{
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+    }
+    .habit-section{
+        position: relative;
+        top: -70px;
+    }
+     .habit-part{
+        margin-top: 0px;
+     }
+     .habit-section-content{
+        margin: 0px 30px;
+     }
+     .habit-section-content h3{
+        font-size: 2.2rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+     }
+     .habit-section-card{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+     }
+    .habit-card-container h5{
+        margin-top: 45px;
+    }
+    .ran-part{
+        flex-direction: column;
+        margin: 40px 30px 0px 30px;
+        padding: 10px;
+    }
+    .ran-part-content{
+        margin: 20px;
+    }
+    .ran-part-content h3{
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    .ran-part-content p{
+        margin-bottom: 30px;
+        font-size: 0.9rem;
+    }
+    #ran-btn{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .ran-part-img img{
+        object-fit: cover;
+    }
+    .ran-part-img{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    .training-section-container{
+        margin: 0px 25px;
+    }
+    .training-section-content h2{
+        font-size: 2.5rem;
+    }
+    .first-part, .second-part{
+        height: 140px;
+    }
+    .img3, .img6{
+        display: none;
+    }
+    .img1, .img2{
+        width: 50%;
+    }
+    .img4{
+        width: 40%;
+    }
+    .img5{
+        width: 60%;
+    }
+    .img1 p{
+        color: white;
+        margin: 100px 0px 0px 20px;
+    }
+    .img4 p{
+        margin: 100px 0px 0px 20px;
+    }
+    .img5 p{
+        margin: 100px 0px 0px 20px;
+    }
+    .bmi-container{
+        margin: 30px 0px 20px 0px;
+    }
+    .bmi-content{
+        margin: 30px 30px 30px 25px;
+        margin-top: 0px;
+    }
+    .bmi-content h4{
+        font-size: 2rem;
+    }
+    .calculate-section-container{
+        flex-direction: column;
+        margin: 0 10px;
+    }
+    .calculate-table-section{
+        width: 100%;
+    }
+    .calculate-table-section h4{
+        margin: 30px 110px 25px 0px;
+        font-size: 1.4rem;
+    }
+     table{
+        max-width: 80%;
+        min-height: 240px;
+        margin: 0px 50px 50px 0px;
+    }
+    td, th{
+        padding: 10px 14px;
+    }
+    th{
+        padding: 13px 14px;
+        font-weight: 400;
+    }
+    .calculate-input-section{
+        width: 100%;
+        margin: 0px;
+    }
+    .input-section{
+        margin: 37px 0px 0px 0px;
+    }
+    .calculate-input-section h3{
+        font-size: 1.4rem;
+        margin-left: 20px;
+    }
+    .calculate-input-section p{
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+    .calculate-input-section input, select{
+        width: 44%;
+        height: 48px;
+        margin: 7px 0px 7px 16px;
+    }
+    .select-activity{
+        width: 99%;
+        margin-left: 1px;
+    }
+    .calculate-input-section button{
+        margin: 30px 0px 43px 16px;
+    }
+    .meet-section-container{
+        margin: 50px 20px 70px 20px;
+    }
+    .meet-section-content{
+        margin: 0px 20px 40px 20px;
+    }
+    .meet-section-content h3{
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    .meet-section-img{
+        grid-template-columns: repeat(1, 1fr);
+     }
+    #img-none{
+        display: none;
+     }
+    .hidden{
+        display: block;
+    }
+    .hidden2{
+        display: none;
+    }
+    .will{
+        display: block;
+    }
+    .will2{
+        display: none;
+    }
+    .challenge-card-container{
+        flex-direction: column;
+    }
+    .challenge-content h2{
+        font-size: 2.8rem;
+        margin: 0 15px;
+    }
+    .challenge-section :hover .discount{
+        display: none;
+    }
+    .challenge-card{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .challenge-card button{
+        margin-bottom: 20px;
+    }
+    .contact hr{
+        max-width: 300px;
+    }
+     .footer-section-container{
+        flex-direction: column;
+        margin: 20px;
+     }
+     .footer-first-part{
+        margin: 0px 0px 40px 7px;
+     }
+     .footer-second-part{
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 7px;
+     }
+     .get-started-1{
+        margin-bottom: 15px;
+     }
+     hr{
+        max-width: 3800px;
+        margin: 70px 25px 50px 25px;
+     }
+     .copyright{
+        text-align: left;
+        margin: 0px 0px 60px 25px;
+     }
+}
+
+
+
+/* medium device media query  */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    body{
+        border-color: black;
+    }
+    .navbar-section{
+        margin: 57px 30px 0px 30px;
+    }
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-content{
+        max-width: 600px;
+        /* margin: 80px 0px 0px 80px; */
+    }
+    .banner-img{
+        max-width: 600px;
+        /* margin: 0px 0px 0px 150px; */
+    }
+    .banner-img img{
+        width: 80%;
+        height: 70%;
+    }
+    .first-shape{
+        width: 200px;
+        height: 100px;
+        top: 13%;
+        left: 45%;
+    }
+    .second-shape{
+        width: 220px;
+        height: 120;
+        top: 60%;
+        left: -3%;
+    }
+    .habit-section-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .habit-card-container{
+        margin: 0 auto;
+    }
+    .habit-section-content{
+        max-width: 750px;
+    }
+    .habit-section-content p{
+        margin-bottom: 50px;
+    }
+    .habit-card-text{
+        margin-bottom: 30px;
+    }
+    .ran-part{
+        max-width: 850px;
+        height: 450px;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    .ran-part-content{
+        margin: 30px 10px 30px 40px;
+    }
+    .ran-part-img{
+        margin: 0px 35px 0px 0px;
+    }
+    .training-section-container{
+        max-width: 850px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .bmi-content{
+        max-width: 850px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .calculate-section-container{
+        flex-direction: column;
+    }
+    table{
+        max-width: 100%;
+        margin: 0px 40px 40px 0px;
+    }
+    .calculate-table-section h4{
+        margin: 30px 90px 40px 0px;
+    }
+    .calculate-input-section{
+        width: 99%;
+        margin: 30px 40px 30px 40px;
+    }
+    .select-activity{
+        width: 99%;
+    }
+    .meet-section-img{
+        max-width: 850px;
+        height: 700px;
+        margin: 0 auto;
+    }
+    .challenge-section :hover .discount{
+        display: none;
+    }
+    .footer-section-container{
+        flex-direction: column;
+        margin: 50px 0px 100px 40px;
+    }
+    .footer-second-part{
+        margin-top: 80px;
+    }
+    hr{
+        max-width: 850px;
+        margin-bottom: 40px;
+    }
+}

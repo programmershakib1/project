@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Chris Gayle",
+    "image": "https://i.ibb.co.com/ynPSkQF/gayle.png",
+    "nationality": "West Indies",
+    "role": "Batsman",
+    "bat": "Left-hand bat",
+    "ball": "Right-hand offbreak",
+    "price": 1500000
+  },
+  {
+    "id": 2,
+    "name": "Shakib Al Hasan",
+    "image": "https://i.ibb.co.com/cvsLFDP/sahakib-al-hasn.png",
+    "nationality": "Bangladesh",
+    "role": "All-rounder",
+    "bat": "Left-hand bat",
+    "ball": "Left-hand orthodox",
+    "price": 1200000
+  },
+  {
+    "id": 3,
+    "name": "Virat Kohli",
+    "image": "https://i.ibb.co.com/6smNDLw/virat-kohli.png",
+    "nationality": "India",
+    "role": "Batsman",
+    "bat": "Right-hand bat",
+    "ball": "None",
+    "price": 2000000
+  },
+  {
+    "id": 4,
+    "name": "Rubel Hossain",
+    "image": "https://i.ibb.co.com/8rthr58/rubel.png",
+    "nationality": "Bangladesh",
+    "role": "Bowler",
+    "bat": "Right-hand bat",
+    "ball": "Right-hand fast",
+    "price": 700000
+  },
+  {
+    "id": 5,
+    "name": "Andre Russell",
+    "image": "https://i.ibb.co.com/jfZBssD/russel.png",
+    "nationality": "West Indies",
+    "role": "All-rounder",
+    "bat": "Right-hand bat",
+    "ball": "Right-hand fast",
+    "price": 1400000
+  },
+  {
+    "id": 6,
+    "name": "Lasith Malinga",
+    "image": "https://i.ibb.co.com/Jr7Mp3f/malinga.png",
+    "nationality": "Sri Lanka",
+    "role": "Bowler",
+    "bat": "Right-hand bat",
+    "ball": "Right-hand fast",
+    "price": 800000
+  },
+  {
+    "id": 7,
+    "name": "Babar Azam",
+    "image": "https://i.ibb.co.com/CJM7knD/azam.png",
+    "nationality": "Pakistan",
+    "role": "Batsman",
+    "bat": "Right-hand bat",
+    "ball": "None",
+    "price": 1750000
+  },
+  {
+    "id": 8,
+    "name": "Mohammad Siraj",
+    "image": "https://i.ibb.co.com/Kh1wHf0/mohammad-shiraj.png",
+    "nationality": "India",
+    "role": "Bowler",
+    "bat": "Right-hand bat",
+    "ball": "Right-hand fast",
+    "price": 850000
+  },
+  {
+    "id": 9,
+    "name": "Mohammad Nabi",
+    "image": "https://i.ibb.co.com/n07LP5s/mohammad-nabi.png",
+    "nationality": "Afghanistan",
+    "role": "All-rounder",
+    "bat": "Right-hand bat",
+    "ball": "Right-hand offbreak",
+    "price": 900000
+  },
+  {
+    "id": 10,
+    "name": "Shahid Afridi",
+    "image": "https://i.ibb.co.com/WcVngMS/shahid-afridi.png",
+    "nationality": "Pakistan",
+    "role": "All-rounder",
+    "bat": "Right-hand bat",
+    "ball": "Right-hand legbreak",
+    "price": 1100000
+  },
+  {
+    "id": 11,
+    "name": "Rohit Sharma",
+    "image": "https://i.ibb.co.com/JCWxT7j/rahit-sharma.png",
+    "nationality": "India",
+    "role": "Batsman",
+    "bat": "Right-hand bat",
+    "ball": "Right-hand offbreak",
+    "price": 1800000
+  },
+  {
+    "id": 12,
+    "name": "Rashid Khan",
+    "image": "https://i.ibb.co.com/7CqPxBd/rashed-khan.png",
+    "nationality": "Afghanistan",
+    "role": "Bowler",
+    "bat": "Right-hand bat",
+    "ball": "Right-hand legbreak",
+    "price": 950000
+  }
+]

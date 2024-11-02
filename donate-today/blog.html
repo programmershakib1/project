@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- tailwind and daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind CSS configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(180, 244, 97)',
+                        secondary: 'rgb(17, 17, 17)',
+                        third: 'rgba(17, 17, 17, 0.7)',
+                        btn_bg: 'rgba(17, 17, 17, 0.1)',
+                        nav_bg: 'rgb(249, 247, 243)',
+                        input: 'rgba(17, 17, 17, 0.4)',
+                    },
+                    fontFamily: {
+                        Lexend: 'Lexend',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-Lexend">
+    <header>
+      <!-- nav section -->
+      <section>
+        <nav class="bg-nav_bg bg-opacity-80">
+            <div class="container w-11/12 mx-auto flex justify-between items-center py-6 lg:pb-14">
+                <div>
+                    <button id="home-btn" class="w-28 h-12 text-secondary bg-primary text-xl font-semibold rounded-lg">Home</button>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="images/logo.png" alt="">
+                    <h2 class="text-secondary text-xl hidden lg:block font-semibold">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="images/coin.png" alt="">
+                    <h2 class="text-third text-xl font-medium"><span id="money-home">5500</span> BDT</h2>
+                </div>
+            </div>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <!-- faq section -->
+      <section class="container w-11/12 mx-auto">
+        <div class="flex items-center gap-3">
+          <h2 class="text-secondary font-bold text-3xl my-10">Important FAQ</h2>
+          <img src="images/question.gif" alt="">
+        </div>
+        <div class="border-2 rounded-lg">
+          <!-- faq 1 -->
+          <div>
+            <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 border-b-2 rounded">
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, allowing developers to interact with and manipulate the content, structure, and style of a document dynamically.</p>
+                </div>
+            </div>
+          </div>
+          <!-- faq 2 -->
+          <div>
+            <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 border-b-2 rounded">
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>Selecting an element from the DOM can be done using various methods provided by the JavaScript document object. example: 1. getElementById 2. getElementsByClassName 3. getElementsByTagName 4. querySelector 5. querySelectorAll</p>
+                </div>
+            </div>
+          </div>
+          <!-- faq 3 -->
+          <div>
+            <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 border-b-2 rounded">
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>Event Delegation in the DOM refers to the practice of attaching an event listener to a parent element instead of directly to each child element. This allows you to handle events for multiple child elements efficiently without having to add individual event listeners to each one.</p>
+                </div>
+            </div>
+          </div>
+          <!-- faq 4 -->
+          <div>
+            <div tabindex="0" class="py-5 collapse collapse-arrow border-base-300 rounded">
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>To manipulate an element's attributes and styles using the DOM, first need to access the element through methods like document.getElementById, document.querySelector, or document.getElementsByClassName.
+                  Attributes: Use setAttribute('attributeName', 'value') to change or add an attribute.
+                  Styles: Access the style property of the element to change CSS styles. then, example (element.style.color = 'blue').
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+        document.getElementById('home-btn').addEventListener('click', function(){
+            window.location.href = 'index.html';
+        });
+    </script>
+    <script src="js/utilities.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
